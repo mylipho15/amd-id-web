@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <!-- Primary Meta Tags -->
+	  <title>R.ID - AMD 3rd Party Drivers</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="title" content="R.ID - AMD 3rd Party Drivers">
+        <meta name="description" content="A new way of Multi-Driver optimization">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://rdn-id.com" />
+        <meta property="og:title" content="R.ID - AMD 3rd Party Drivers" />
+        <meta property="og:description" content="A new way of Multi-Driver optimization" />
+        <meta property="og:image" content="img/R_ID_Text.jpg" />
+        <meta property="og:image:type" content="image/jpg" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://rdn-id.com" />
+        <meta property="twitter:title" content="R.ID - AMD 3rd Party Drivers" />
+        <meta property="twitter:description" content="A new way of Multi-Driver optimization" />
+        <meta property="twitter:image" content="img/R_ID_Text.jpg" />
+		
+	  <meta content="#3333cc" data-react-helmet="true" name="theme-color" />
+	  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	    <link rel="icon" type="image/x-icon" href="img/r.ico">
+
+		<!-- Latest compiled Font Awesome -->
+		<!-- <script src="https://kit.fontawesome.com/0d64c01082.js" crossorigin="anonymous"></script>  -->
+
+		<!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WD3DQSNX1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-7WD3DQSNX1');
+        </script>
+		<style>
+html {
+  scroll-behavior: smooth;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto"}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background: rgba(60, 60, 60, 0.3);
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/R_ID_4K.jpg");
+  min-height:100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+  transition: 0.1s;
+  
+}
+a {
+	color: white;
+}
+		</style>
+	</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="img/r-id_sm.png" style="height:32px;"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#features" class="w3-bar-item w3-button" style="text-decoration-line:none;"><i class="glyphicon glyphicon-star"></i> KEY FEATURES</a>
+      <a href="#download" class="w3-bar-item w3-button" style="text-decoration-line:none;"><i class="glyphicon glyphicon-download"></i> DOWNLOAD</a>
+      <a href="#compat" class="w3-bar-item w3-button" style="text-decoration-line:none;"><i class="glyphicon glyphicon-cog"></i> COMPATIBILITY</a>
+      <a href="#guide" class="w3-bar-item w3-button" style="text-decoration-line:none;"><i class="glyphicon glyphicon-book"></i> GUIDE</a>
+	  <a href="#reviews" class="w3-bar-item w3-button" style="text-decoration-line:none;"><i class="glyphicon glyphicon-user"></i> REVIEWS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()" style="text-decoration-line:none;">
+      &#9776;
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#compat" onclick="w3_close()" class="w3-bar-item w3-button">COMPATIBILITY</a>
+  <a href="#features" onclick="w3_close()" class="w3-bar-item w3-button">KEY FEATURES</a>
+  <a href="#download" onclick="w3_close()" class="w3-bar-item w3-button">DOWNLOAD</a>
+  <a href="#guide" onclick="w3_close()" class="w3-bar-item w3-button">GUIDE</a>
+  <a href="#reviews" onclick="w3_close()" class="w3-bar-item w3-button">REVIEWS</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white" style="padding:48px">
+    <center><span class="w3-xxlarge w3-hide-small">Introducing a new Multi-Driver Optimization</span><br>
+    <span class="w3-xlarge w3-hide-large w3-hide-medium">Introducing a new Multi-Driver Optimization</span><br>
+    <span>Featuring Close-to-Official Implementation</span>
+	<i><p><span class="w3-small">Last update: Polaris-Vega-Navi 25.3.1 Rev 2.5 Released</span></p></i>
+    <p><a href="https://discord.gg/rdnid" target="_blank" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" style="transition: 0.1s;text-decoration-line:none;">Join R.ID Discord Server</a>
+	<a href="https://sourceforge.net/projects/radeon-id-distribution/" target="_blank" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" style="transition: 0.1s;text-decoration-line:none;"><i class="glyphicon glyphicon-bookmark"></i> View at Sourceforge</a>
+	</p>
+	</center>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-white w3-large" style="padding:24px 48px">
+    <a href="https://forums.guru3d.com/threads/3rd-party-driver-amernime-zone-radeon-release-nemesis-22-8-2-whql-driverpack.436611/" target="_blank"><i class="glyphicon glyphicon-globe w3-hover-opacity"></i></a>
+  </div>
+</header>
+
+<!-- Key Features Section -->
+<div class="w3-container w3-black" style="padding:128px 16px" id="features">
+   <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="glyphicon glyphicon-wrench w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large"><b>Compatibility</b></p>
+      <p>Add more compatibility for newer apps and stability for your AMD GPUs, especially the old AMD GPUs that has dropped support from AMD Official Drivers. Most of the common bugs that were found in official drivers has been fixed in the R.ID Drivers.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="glyphicon glyphicon-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large"><b>Community</b></p>
+      <p>With community support, our drivers are constantly being tested and improved with tons of feedback. Users can directly contribute in the development of the drivers.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="glyphicon glyphicon-ok-sign w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large"><b>Security</b></p>
+      <p>There is no need to worry about security issues. WHQL support is included with the drivers which allows you to use most apps that use DRM protection. Now with WHQL Emulation, make it easier to update windows safely, and even if whql state is NO, you can play online games anytime you want!</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="glyphicon glyphicon-tasks w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large"><b>Flexibility</b></p>
+      <p>This driver includes Various Tweaks that can't just be implemented with registry tweaks. Long-Term Service packages are also included to provide more compatibility while keeping new features inside, we also provide various tweaks to experiment with to improve your system's performance.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- WHQL Section -->
+<div class="w3-container w3-black" style="padding:0 16px 128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3><b>Benchmark Validation and DRM Apps Approved</b></h3>
+      <p>Bench it anytime with R.ID Drivers, without ruining the validation.<br>Also, You have freedom to play most games with tough anti-cheats like Vanguard does.</p>
+      <p><a href="#download" class="w3-button w3-red" style="transition: 0.1s;text-decoration-line:none;"><i class="glyphicon glyphicon-save"></i>Download Now!</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="img/benchmark_ok.png" alt="Benchmarks">
+    </div>
+	
+  </div>
+</div>
+
+<!-- Download Section -->
+<div class="w3-container w3-row w3-center w3-dark-gray" style="padding:128px 16px" id="download">
+  <h3><b>DOWNLOAD LINKS</b></h3>
+  <p class="w3-large">Download the latest version (includes CCC2 aka Radeon UI below driver links):</p> 
+  <p><b>Attention!!! Due to some people downloaded WRONG DRIVER PACKAGES, you must <u><a href="#compat" class="w3-hover-text-black">CHECK DEVICE COMPATIBILITY before downloading it!</a></u></b></p>  
+  <div class="w3-bar-item">
+		<a class="w3-button w3-black w3-hover-red w3-hover-shadow w3-mobile w3-section" style="width:25%;transition: 0.2s;text-decoration-line:none;" href="https://sourceforge.net/projects/radeon-id-distribution/files/Release%20Legacy%20Terascale%20%28Pre-GCN%29/V5-JulyPrev-UMD-TRDX11-Nemesis-NimeZ-DCH.7z/download" target="_blank"><i class="glyphicon glyphicon-download-alt"></i> Terascale DX11 July Update
+		<br><i style="font-size:12px;">For Terascale 2-3 based GPUs</i></a>
+	
+		<a class="w3-button w3-black w3-hover-red w3-hover-shadow w3-mobile w3-section" style="width:25%;transition: 0.2s;text-decoration-line:none;" href="https://sourceforge.net/projects/radeon-id-distribution/files/Release%20Legacy%20GCN%20%28Pre-Polaris%29/WHQL-AMD-Software-Hybrid-Edition-23.9.1-iCafe-GCNFlex-Omega-RemiX-DCH.7z/download" target="_blank"><i class="glyphicon glyphicon-download-alt"></i> Legacy GCN 23.9.1 iCafe<br><i style="font-size:12px;">For GCN 1-2-3 based GPUs</i></a>
+
+		<a class="w3-button w3-black w3-hover-red w3-hover-shadow w3-mobile w3-section" style="width:25%;transition: 0.2s;text-decoration-line:none;" href="https://sourceforge.net/projects/radeon-id-distribution/files/Release%20Polaris-Vega-Navi/WHQL-R-ID-Software-Hybrid-25.3.1-R2.5-Win10-Win11-PolarisVegaNavi-Sophronia.7z/download" target="_blank"><i class="glyphicon glyphicon-download-alt"></i> Polaris-Vega-Navi 25.3.1 R2.5<br><i style="font-size:12px;">For Polaris-Vega-Navi</i></a>
+  </div>
+  <div class="w3-bar-item">
+		<a class="w3-button w3-black w3-hover-red w3-hover-shadow w3-mobile w3-section" style="width:25%;transition: 0.2s;text-decoration-line:none;" href="https://sourceforge.net/projects/radeon-id-distribution/files/Dependencies/CrimsonUI_2019Ed/ccc2_install.exe/download" target="_blank"><i class="glyphicon glyphicon-download-alt"></i> Crimson UI 2019
+		<br><i style="font-size:12px;">For Terascale DX11 Drivers</i></a>
+	
+		<a class="w3-button w3-black w3-hover-red w3-hover-shadow w3-mobile w3-section" style="width:25%;transition: 0.2s;text-decoration-line:none;" href="https://sourceforge.net/projects/radeon-id-distribution/files/Dependencies/V5.5/ccc2_install_v5.5_23.10.exe/download" target="_blank"><i class="glyphicon glyphicon-download-alt"></i> Legacy GCN 23.10 UI<br><i style="font-size:12px;">For Legacy GCN Drivers</i></a>
+
+		<a class="w3-button w3-black w3-hover-red w3-hover-shadow w3-mobile w3-section" style="width:25%;transition: 0.2s;text-decoration-line:none;" href="https://sourceforge.net/projects/radeon-id-distribution/files/Dependencies/V5.5/ccc2_install_v5.5_24.30.exe/download" target="_blank"><i class="glyphicon glyphicon-download-alt"></i> PVN 24.30 UI
+		<br><i style="font-size:12px;">For PVN 25.x Drivers</i></a>
+  </div>
+  <p class="w3-large">Beta and Specific Drivers:</p>  
+  <div class="w3-bar-item">
+		<a class="w3-button w3-black w3-hover-red w3-hover-shadow w3-mobile w3-section" style="width:25%;transition: 0.2s;text-decoration-line:none;" href="https://sourceforge.net/projects/radeon-id-distribution/files/Release%20Polaris-Vega-Navi/Release%20AMD%20SoC/WHQL-AMD-Software-Hybrid-Edition-23.9.1SVR-SoC-Omega-RemiX-DCH.7z/download" target="_blank"><i class="glyphicon glyphicon-download-alt"></i>AMD PVN-SoC APU 23.9.1*<br><i style="font-size:12px;">Beta Drivers for AMD PVN-SoC APU</i></a>
+ 
+		<a class="w3-button w3-black w3-hover-red w3-hover-shadow w3-mobile w3-section" style="width:25%;transition: 0.2s;text-decoration-line:none;" href="https://sourceforge.net/projects/radeon-id-distribution/files/Release%20Polaris-Vega-Navi/WHQL-AMD-Software-Hybrid-Edition-23.10.2-iCafe-PVNFlex-Omega-RemiX-DCH.7z/download" target="_blank"><i class="glyphicon glyphicon-download-alt"></i> Polaris-Vega-Navi 23.10.2 iCafe
+		<br><i style="font-size:12px;">iCafe Drivers for PVN</i></a>
+		
+		<a class="w3-button w3-black w3-hover-red w3-hover-shadow w3-mobile w3-section" style="width:25%;transition: 0.2s;text-decoration-line:none;" href="https://sourceforge.net/projects/radeon-id-distribution/files/Release%20Polaris-Vega-Navi/WHQL-AMD-Software-Hybrid-Edition-23.11.1-PVNFlex-Nebula-Native-DCH.7z/download" target="_blank"><i class="glyphicon glyphicon-download-alt"></i> Polaris-Vega-Navi 23.11.1 GUI
+		<br><i style="font-size:12px;">Regular PVN Drivers</i></a>
+  </div>
+  <div class="w3-bar-item">
+		<a class="w3-button w3-black w3-hover-red w3-hover-shadow w3-mobile w3-section" style="width:75%;transition: 0.2s;text-decoration-line:none;" href="https://sourceforge.net/projects/radeon-id-distribution/files/Dependencies/V5.5/ccc2_install_v5.5_23.20.exe/download" target="_blank"><i class="glyphicon glyphicon-download-alt"></i> PVN 23.20 UI<br><i style="font-size:12px;">For PVN-Soc, iCafe 23.10.2 and Regular PVN 23.11.1</i></a>
+  </div>
+  <p>By using R.ID Drivers, <u><a href="terms.html" target="_blank" class="w3-hover-text-black">you agree to the following terms in this page.</a></u></p>
+  <p>* : Designed for Steam Deck, RuYi, SuborZ/Fenghuang</p>
+  <p>All the driver packages can be found on <u><a href="https://sourceforge.net/projects/radeon-id-distribution/files/" target="_blank" class="w3-hover-text-black">Sourceforge</a></u></p>
+  <p>All the changelogs are posted in the <u><a href="https://sourceforge.net/p/radeon-id-distribution/blog/" target="_blank" class="w3-hover-text-black">Sourceforge Blogs</a></u>.</p>
+  <p class="w3-large" style="margin-top:64px;">Looking for other version?</p>
+  <p>You can go to the Sourceforge Drivers directory that matches your GPU architecture below.</p>
+  <div class="w3-bar-item w3-margin-top">
+		<a class="w3-button cat w3-black w3-hover-red w3-hover-shadow w3-mobile w3-section" style="width:25%;transition: 0.2s;text-decoration-line:none;" href="https://sourceforge.net/projects/radeon-id-distribution/files/Release%20Legacy%20Terascale%20%28Pre-GCN%29/" target="_blank"><i class="glyphicon glyphicon-folder-open"></i> Terascale DX11</a>
+		
+		<a class="w3-button w3-black w3-hover-red w3-hover-shadow w3-mobile w3-section" style="width:25%;transition: 0.2s;text-decoration-line:none;" href="https://sourceforge.net/projects/radeon-id-distribution/files/Release%20Legacy%20GCN%20%28Pre-Polaris%29/" target="_blank"><i class="glyphicon glyphicon-folder-open"></i> Legacy GCN</a>
+		
+		<a class="w3-button w3-black w3-hover-red w3-hover-shadow w3-mobile w3-section" style="width:25%;transition: 0.2s;text-decoration-line:none;" href="https://sourceforge.net/projects/radeon-id-distribution/files/Release%20Polaris-Vega-Navi/" target="_blank"><i class="glyphicon glyphicon-folder-open"></i> Polaris - Vega - Navi</a>
+  </div>
+</div>
+<!-- Device Section --> 
+<div class = "w3-container w3-black" style="padding:128px 32px" id="compat">
+    <h3 class="w3-center"><b>DEVICE COMPATIBILITY LIST</b></h3>
+	<p><center>Here is the list of devices that are compatible with R.ID Drivers. To speed up searching your GPU type, click one of these GPU Architecture, then use "Find on Page" feature from your browser and type your GPU name.</center></p>
+	<br>
+		<div class="w3-row" id="gpus">
+				<a style="transition: 0.2s;" onclick="nimez(event,'gcn1');">
+					<div class="w3-third tablink w3-bottombar w3-hover-red w3-padding">GCN 1</div>
+				</a>
+				<a style="transition: 0.2s;" onclick="nimez(event,'gcn2');">
+					<div class="w3-third tablink w3-bottombar w3-hover-red w3-padding">GCN 2</div>
+				</a>				
+				<a style="transition: 0.2s;" onclick="nimez(event,'gcn3');">
+					<div class="w3-third tablink w3-bottombar w3-hover-red w3-padding">GCN 3</div>
+				</a>				
+				<a style="transition: 0.2s;" onclick="nimez(event,'polaris');">
+					<div class="w3-third tablink w3-bottombar w3-hover-red w3-padding">Polaris</div>
+				</a>				
+				<a style="transition: 0.2s;" onclick="nimez(event,'vega');">
+					<div class="w3-third tablink w3-bottombar w3-hover-red w3-padding">Vega</div>
+				</a>				
+				<a style="transition: 0.2s;" onclick="nimez(event,'navi');">
+					<div class="w3-third tablink w3-bottombar w3-hover-red w3-padding">Navi</div>
+				</a>
+		</div>
+		<div id="gcn1" class="w3-container w3-border gpu" style="display:none">
+			<h2>GCN 1</h2>
+			<br>
+			<ul>
+				<li>FirePro D300</li>
+				<li>FirePro D500</li>
+				<li>FirePro D700</li>
+				<li>FirePro M3100</li>
+				<li>FirePro M4000</li>
+				<li>FirePro M4100</li>
+				<li>FirePro M4150</li>
+				<li>FirePro M5100</li>
+				<li>FirePro M6000</li>
+				<li>FirePro R5000</li>
+				<li>FirePro S10000</li>
+				<li>FirePro S10000 Passive</li>
+				<li>FirePro S10000 Passive 12GB</li>
+				<li>FirePro S4000X</li>
+				<li>FirePro S7000</li>
+				<li>FirePro S9000</li>
+				<li>FirePro S9010</li>
+				<li>FirePro S9050</li>
+				<li>FirePro W2100</li>
+				<li>FirePro W4000</li>
+				<li>FirePro W4100</li>
+				<li>FirePro W4130M</li>
+				<li>FirePro W4150M</li>
+				<li>FirePro W4170M</li>
+				<li>FirePro W4170M</li>
+				<li>FirePro W4190M</li>
+				<li>FirePro W5000</li>
+				<li>FirePro W5000 DVI</li>
+				<li>FirePro W5130M</li>
+				<li>FirePro W5170M</li>
+				<li>FirePro W600</li>
+				<li>FirePro W7000</li>
+				<li>FirePro W8000</li>
+				<li>FirePro W9000</li>
+				<li>Radeon 520 Mobile</li>
+				<li>Radeon 520 Mobile</li>
+				<li>Radeon 610 Mobile</li>
+				<li>Radeon E8860</li>
+				<li>Radeon HD 7730</li>
+				<li>Radeon HD 7730M</li>
+				<li>Radeon HD 7750</li>
+				<li>Radeon HD 7750M</li>
+				<li>Radeon HD 7770 GHz Edition</li>
+				<li>Radeon HD 7770M</li>
+				<li>Radeon HD 7850</li>
+				<li>Radeon HD 7850M</li>
+				<li>Radeon HD 7870 GHz Edition</li>
+				<li>Radeon HD 7870 XT</li>
+				<li>Radeon HD 7870M</li>
+				<li>Radeon HD 7950</li>
+				<li>Radeon HD 7950 Boost</li>
+				<li>Radeon HD 7950 Mac Edition</li>
+				<li>Radeon HD 7950 Monica BIOS 1</li>
+				<li>Radeon HD 7950 Monica BIOS 2</li>
+				<li>Radeon HD 7950M</li>
+				<li>Radeon HD 7970</li>
+				<li>Radeon HD 7970 GHz Edition</li>
+				<li>Radeon HD 7970 X2</li>
+				<li>Radeon HD 7970M</li>
+				<li>Radeon HD 7990</li>
+				<li>Radeon HD 8530M</li>
+				<li>Radeon HD 8550M</li>
+				<li>Radeon HD 8570 OEM</li>
+				<li>Radeon HD 8570A</li>
+				<li>Radeon HD 8570M</li>
+				<li>Radeon HD 8590M</li>
+				<li>Radeon HD 8670 OEM</li>
+				<li>Radeon HD 8670A</li>
+				<li>Radeon HD 8670A</li>
+				<li>Radeon HD 8670M</li>
+				<li>Radeon HD 8670M</li>
+				<li>Radeon HD 8690M</li>
+				<li>Radeon HD 8730 OEM</li>
+				<li>Radeon HD 8730A</li>
+				<li>Radeon HD 8730M</li>
+				<li>Radeon HD 8740 OEM</li>
+				<li>Radeon HD 8750A</li>
+				<li>Radeon HD 8750M</li>
+				<li>Radeon HD 8760 OEM</li>
+				<li>Radeon HD 8770M</li>
+				<li>Radeon HD 8790M</li>
+				<li>Radeon HD 8830M</li>
+				<li>Radeon HD 8850M</li>
+				<li>Radeon HD 8860 OEM</li>
+				<li>Radeon HD 8870 OEM</li>
+				<li>Radeon HD 8870M</li>
+				<li>Radeon HD 8950 OEM</li>
+				<li>Radeon HD 8970 OEM</li>
+				<li>Radeon HD 8970M</li>
+				<li>Radeon HD 8990 OEM</li>
+				<li>Radeon R5 240 OEM</li>
+				<li>Radeon R5 330 OEM</li>
+				<li>Radeon R5 340 OEM</li>
+				<li>Radeon R5 340X OEM</li>
+				<li>Radeon R5 430 OEM</li>
+				<li>Radeon R5 435 OEM</li>
+				<li>Radeon R5 A230</li>
+				<li>Radeon R5 A240</li>
+				<li>Radeon R5 A240</li>
+				<li>Radeon R5 A320</li>
+				<li>Radeon R5 A330</li>
+				<li>Radeon R5 A335</li>
+				<li>Radeon R5 M230</li>
+				<li>Radeon R5 M230</li>
+				<li>Radeon R5 M230 Rebrand</li>
+				<li>Radeon R5 M230 Rebrand</li>
+				<li>Radeon R5 M240</li>
+				<li>Radeon R5 M240 Rebrand</li>
+				<li>Radeon R5 M250</li>
+				<li>Radeon R5 M320</li>
+				<li>Radeon R5 M330</li>
+				<li>Radeon R5 M335</li>
+				<li>Radeon R5 M420</li>
+				<li>Radeon R5 M430</li>
+				<li>Radeon R5 M430</li>
+				<li>Radeon R5 M430</li>
+				<li>Radeon R5 M435</li>
+				<li>Radeon R6 M255DX</li>
+				<li>Radeon R6 M335DX</li>
+				<li>Radeon R6 M340DX</li>
+				<li>Radeon R6 M435DX</li>
+				<li>Radeon R7 240</li>
+				<li>Radeon R7 240</li>
+				<li>Radeon R7 240 OEM</li>
+				<li>Radeon R7 250</li>
+				<li>Radeon R7 250</li>
+				<li>Radeon R7 250</li>
+				<li>Radeon R7 250 OEM</li>
+				<li>Radeon R7 250E</li>
+				<li>Radeon R7 250X</li>
+				<li>Radeon R7 250XE</li>
+				<li>Radeon R7 265</li>
+				<li>Radeon R7 265X OEM</li>
+				<li>Radeon R7 340 OEM</li>
+				<li>Radeon R7 340 OEM</li>
+				<li>Radeon R7 350</li>
+				<li>Radeon R7 350 640SP</li>
+				<li>Radeon R7 350 OEM</li>
+				<li>Radeon R7 350X OEM</li>
+				<li>Radeon R7 370</li>
+				<li>Radeon R7 430 OEM</li>
+				<li>Radeon R7 435 OEM</li>
+				<li>Radeon R7 450 OEM</li>
+				<li>Radeon R7 A265</li>
+				<li>Radeon R7 A360</li>
+				<li>Radeon R7 M260DX</li>
+				<li>Radeon R7 M260DX</li>
+				<li>Radeon R7 M260X</li>
+				<li>Radeon R7 M265</li>
+				<li>Radeon R7 M265DX</li>
+				<li>Radeon R7 M270</li>
+				<li>Radeon R7 M270DX</li>
+				<li>Radeon R7 M340</li>
+				<li>Radeon R7 M350</li>
+				<li>Radeon R7 M365X</li>
+				<li>Radeon R7 M370</li>
+				<li>Radeon R7 M380</li>
+				<li>Radeon R7 M465</li>
+				<li>Radeon R7 M465X</li>
+				<li>Radeon R8 M350DX</li>
+				<li>Radeon R8 M435DX</li>
+				<li>Radeon R9 255 OEM</li>
+				<li>Radeon R9 270</li>
+				<li>Radeon R9 270 1024SP</li>
+				<li>Radeon R9 270X</li>
+				<li>Radeon R9 280</li>
+				<li>Radeon R9 280X</li>
+				<li>Radeon R9 280X2</li>
+				<li>Radeon R9 370</li>
+				<li>Radeon R9 370 1024SP</li>
+				<li>Radeon R9 370X</li>
+				<li>Radeon R9 A375</li>
+				<li>Radeon R9 M265X</li>
+				<li>Radeon R9 M270X</li>
+				<li>Radeon R9 M275</li>
+				<li>Radeon R9 M275X</li>
+				<li>Radeon R9 M290X</li>
+				<li>Radeon R9 M290X Mac Edition</li>
+				<li>Radeon R9 M360</li>
+				<li>Radeon R9 M365X</li>
+				<li>Radeon R9 M370X Mac Edition</li>
+				<li>Radeon R9 M375</li>
+				<li>Radeon R9 M375X</li>
+				<li>Radeon R9 M390 Mac Edition</li>
+			</ul>
+		</div>
+
+		<div id="gcn2" class="w3-container w3-border gpu" style="display:none">
+			<h2>GCN 2</h2>
+			<br>
+			<ul>
+				<li>FirePro M6100</li>
+				<li>FirePro S9100</li>
+				<li>FirePro S9150</li>
+				<li>FirePro S9170</li>
+				<li>FirePro W4300</li>
+				<li>FirePro W5100</li>
+				<li>FirePro W6150M</li>
+				<li>FirePro W6170M</li>
+				<li>FirePro W8100</li>
+				<li>FirePro W9100</li>
+				<li>Radeon E8870</li>
+				<li>Radeon HD 7790</li>
+				<li>Radeon HD 8180 IGP</li>
+				<li>Radeon HD 8210 IGP</li>
+				<li>Radeon HD 8210E</li>
+				<li>Radeon HD 8240 Mobile IGP</li>
+				<li>Radeon HD 8250 IGP</li>
+				<li>Radeon HD 8280 IGP</li>
+				<li>Radeon HD 8280 Mobile IGP</li>
+				<li>Radeon HD 8280E</li>
+				<li>Radeon HD 8330 Mobile IGP</li>
+				<li>Radeon HD 8330E</li>
+				<li>Radeon HD 8400 IGP</li>
+				<li>Radeon HD 8400 Mobile IGP</li>
+				<li>Radeon HD 8400E</li>
+				<li>Radeon HD 8770 OEM</li>
+				<li>Radeon HD 8950M</li>
+				<li>Radeon R2 Mobile Graphics</li>
+				<li>Radeon R2 Mobile Graphics</li>
+				<li>Radeon R3 Mobile Graphics</li>
+				<li>Radeon R3E Mobile Graphics</li>
+				<li>Radeon R4 Mobile Graphics</li>
+				<li>Radeon R4 Mobile Graphics</li>
+				<li>Radeon R5 Graphics</li>
+				<li>Radeon R5 Graphics</li>
+				<li>Radeon R5 Mobile Graphics</li>
+				<li>Radeon R6 Mobile Graphics</li>
+				<li>Radeon R7 260</li>
+				<li>Radeon R7 260X</li>
+				<li>Radeon R7 360</li>
+				<li>Radeon R7 360 896SP</li>
+				<li>Radeon R7 360E</li>
+				<li>Radeon R7 Graphics</li>
+				<li>Radeon R7 Graphics</li>
+				<li>Radeon R7 Mobile Graphics</li>
+				<li>Radeon R9 260 OEM</li>
+				<li>Radeon R9 290</li>
+				<li>Radeon R9 290X</li>
+				<li>Radeon R9 290X2</li>
+				<li>Radeon R9 295X2</li>
+				<li>Radeon R9 360 OEM</li>
+				<li>Radeon R9 390</li>
+				<li>Radeon R9 390 X2</li>
+				<li>Radeon R9 390X</li>
+				<li>Radeon R9 M270X</li>
+				<li>Radeon R9 M280X</li>
+				<li>Radeon R9 M280X</li>
+				<li>Radeon R9 M380</li>
+				<li>Radeon R9 M380 Mac Edition</li>
+				<li>Radeon R9 M385</li>
+				<li>Radeon R9 M385X</li>
+				<li>Radeon R9 M470</li>
+				<li>Radeon R9 M470X</li>
+				<li>Radeon RX 455 OEM</li>
+			</ul>
+		</div>
+
+		<div id="gcn3" class="w3-container w3-border gpu" style="display:none">
+			<h2>GCN 3</h2>
+			<br>
+			<ul>
+				<li>FirePro S7100X</li>
+				<li>FirePro S7150</li>
+				<li>FirePro S7150 x2</li>
+				<li>FirePro S9300 X2</li>
+				<li>FirePro W7100</li>
+				<li>FirePro W7170M</li>
+				<li>Radeon 530 Mobile</li>
+				<li>Radeon 530X Mobile</li>
+				<li>Radeon 535 Mobile</li>
+				<li>Radeon 620 Mobile</li>
+				<li>Radeon 625 Mobile</li>
+				<li>Radeon E8950</li>
+				<li>Radeon Instinct MI8</li>
+				<li>Radeon Pro Duo</li>
+				<li>Radeon R2 Mobile Graphics</li>
+				<li>Radeon R3 Mobile Graphics</li>
+				<li>Radeon R4 Mobile Graphics</li>
+				<li>Radeon R5 A255</li>
+				<li>Radeon R5 Graphics</li>
+				<li>Radeon R5 M255</li>
+				<li>Radeon R5 M315</li>
+				<li>Radeon R5 M445</li>
+				<li>Radeon R5 M465</li>
+				<li>Radeon R5 Mobile Graphics</li>
+				<li>Radeon R5 Mobile Graphics</li>
+				<li>Radeon R6 M255DX</li>
+				<li>Radeon R6 Mobile Graphics</li>
+				<li>Radeon R7 A260</li>
+				<li>Radeon R7 A360</li>
+				<li>Radeon R7 A360</li>
+				<li>Radeon R7 M260</li>
+				<li>Radeon R7 M260DX</li>
+				<li>Radeon R7 M265</li>
+				<li>Radeon R7 M265DX</li>
+				<li>Radeon R7 M265DX</li>
+				<li>Radeon R7 M270DX</li>
+				<li>Radeon R7 M340</li>
+				<li>Radeon R7 M350</li>
+				<li>Radeon R7 M360</li>
+				<li>Radeon R7 M440</li>
+				<li>Radeon R7 M445</li>
+				<li>Radeon R7 M460</li>
+				<li>Radeon R7 M465</li>
+				<li>Radeon R7 Mobile Graphics</li>
+				<li>Radeon R8 M365DX</li>
+				<li>Radeon R8 M445DX</li>
+				<li>Radeon R8 M535DX</li>
+				<li>Radeon R9 285</li>
+				<li>Radeon R9 285X</li>
+				<li>Radeon R9 380</li>
+				<li>Radeon R9 380 OEM</li>
+				<li>Radeon R9 380X</li>
+				<li>Radeon R9 FURY</li>
+				<li>Radeon R9 FURY X</li>
+				<li>Radeon R9 FURY X2</li>
+				<li>Radeon R9 M295X</li>
+				<li>Radeon R9 M295X Mac Edition</li>
+				<li>Radeon R9 M390X</li>
+				<li>Radeon R9 M395 Mac Edition</li>
+				<li>Radeon R9 M395X</li>
+				<li>Radeon R9 M395X Mac Edition</li>
+				<li>Radeon R9 M485X</li>
+				<li>Radeon R9 Nano</li>
+			</ul>
+		</div>
+		<div id="polaris" class="w3-container w3-border gpu" style="display:none">
+			<h2>POLARIS</h2>
+			<br>
+			<ul>
+				<li>Radeon 540 Mobile</li>
+				<li>Radeon 540X Mobile</li>
+				<li>Radeon 540X Mobile</li>
+				<li>Radeon 550</li>
+				<li>Radeon 550X</li>
+				<li>Radeon 550X 640SP</li>
+				<li>Radeon 550X Mobile</li>
+				<li>Radeon 630 Mobile</li>
+				<li>Radeon E9171 MCM</li>
+				<li>Radeon E9172 MXM</li>
+				<li>Radeon E9173 PCIe</li>
+				<li>Radeon E9174 MXM</li>
+				<li>Radeon E9175 PCIe</li>
+				<li>Radeon E9260 MXM</li>
+				<li>Radeon E9260 PCIe</li>
+				<li>Radeon E9390 PCIe</li>
+				<li>Radeon E9550 MXM</li>
+				<li>Radeon E9560 PCIe</li>
+				<li>Radeon Instinct MI6</li>
+				<li>Radeon Pro 450</li>
+				<li>Radeon Pro 455</li>
+				<li>Radeon Pro 460</li>
+				<li>Radeon Pro 555</li>
+				<li>Radeon Pro 555X</li>
+				<li>Radeon Pro 560</li>
+				<li>Radeon Pro 560X</li>
+				<li>Radeon Pro 570</li>
+				<li>Radeon Pro 570X</li>
+				<li>Radeon Pro 575</li>
+				<li>Radeon Pro 575X</li>
+				<li>Radeon Pro 580</li>
+				<li>Radeon Pro 580X</li>
+				<li>Radeon Pro Duo Polaris</li>
+				<li>Radeon Pro V5300X</li>
+				<li>Radeon Pro V7300X</li>
+				<li>Radeon Pro V7350X2</li>
+				<li>Radeon Pro WX 2100</li>
+				<li>Radeon Pro WX 3100</li>
+				<li>Radeon Pro WX 3200</li>
+				<li>Radeon Pro WX 3200 Mobile</li>
+				<li>Radeon Pro WX 4100</li>
+				<li>Radeon Pro WX 4130 Mobile</li>
+				<li>Radeon Pro WX 4150 Mobile</li>
+				<li>Radeon Pro WX 4170 Mobile</li>
+				<li>Radeon Pro WX 5100</li>
+				<li>Radeon Pro WX 7100</li>
+				<li>Radeon Pro WX 7100 Mobile</li>
+				<li>Radeon Pro WX 7130 Mobile</li>
+				<li>Radeon Pro WX Vega M GL</li>
+				<li>Radeon RX 460</li>
+				<li>Radeon RX 460 1024SP</li>
+				<li>Radeon RX 460 Mobile</li>
+				<li>Radeon RX 470</li>
+				<li>Radeon RX 470 Mobile</li>
+				<li>Radeon RX 470D</li>
+				<li>Radeon RX 480</li>
+				<li>Radeon RX 480 Mobile</li>
+				<li>Radeon RX 540 Mobile</li>
+				<li>Radeon RX 540X Mobile</li>
+				<li>Radeon RX 550</li>
+				<li>Radeon RX 550 512SP</li>
+				<li>Radeon RX 550 640SP</li>
+				<li>Radeon RX 550 Mobile</li>
+				<li>Radeon RX 550X</li>
+				<li>Radeon RX 550X 640SP</li>
+				<li>Radeon RX 550X Mobile</li>
+				<li>Radeon RX 560</li>
+				<li>Radeon RX 560 896SP</li>
+				<li>Radeon RX 560 Mobile</li>
+				<li>Radeon RX 560 Mobile</li>
+				<li>Radeon RX 560 Mobile</li>
+				<li>Radeon RX 560 XT</li>
+				<li>Radeon RX 560D</li>
+				<li>Radeon RX 560DX</li>
+				<li>Radeon RX 560X</li>
+				<li>Radeon RX 560X Mobile</li>
+				<li>Radeon RX 560X Mobile</li>
+				<li>Radeon RX 560X Mobile</li>
+				<li>Radeon RX 560X Mobile</li>
+				<li>Radeon RX 570</li>
+				<li>Radeon RX 570 Mobile</li>
+				<li>Radeon RX 570 X2</li>
+				<li>Radeon RX 570X</li>
+				<li>Radeon RX 580</li>
+				<li>Radeon RX 580 2048SP</li>
+				<li>Radeon RX 580 Mobile</li>
+				<li>Radeon RX 580 OEM</li>
+				<li>Radeon RX 580G</li>
+				<li>Radeon RX 580X</li>
+				<li>Radeon RX 580X Mobile</li>
+				<li>Radeon RX 590</li>
+				<li>Radeon RX 590 GME</li>
+				<li>Radeon RX 640 Mobile</li>
+				<li>Radeon RX 640 OEM</li>
+				<li>Radeon RX Vega M GH</li>
+				<li>Radeon RX Vega M GL</li>
+			</ul>
+		</div>
+		<div id="vega" class="w3-container w3-border gpu" style="display:none">
+			<h2>VEGA</h2>
+			<br>
+			<ul>
+				<li>Radeon Instinct MI25</li>
+				<li>Radeon Pro SSG</li>
+				<li>Radeon Pro V320</li>
+				<li>Radeon Pro V340 16 GB</li>
+				<li>Radeon Pro V340 8 GB</li>
+				<li>Radeon Pro Vega 16</li>
+				<li>Radeon Pro Vega 20</li>
+				<li>Radeon Pro Vega 48</li>
+				<li>Radeon Pro Vega 56</li>
+				<li>Radeon Pro Vega 64</li>
+				<li>Radeon Pro Vega 64X</li>
+				<li>Radeon Pro WX 8100</li>
+				<li>Radeon Pro WX 8200</li>
+				<li>Radeon Pro WX 9100</li>
+				<li>Radeon RX Vega 10 Mobile</li>
+				<li>Radeon RX Vega 11</li>
+				<li>Radeon RX Vega 11</li>
+				<li>Radeon RX Vega 11</li>
+				<li>Radeon RX Vega 11 Embedded</li>
+				<li>Radeon RX Vega 11 Mobile</li>
+				<li>Radeon RX Vega 56</li>
+				<li>Radeon RX Vega 56 Mobile</li>
+				<li>Radeon RX Vega 64</li>
+				<li>Radeon RX Vega 64 Limited Edition</li>
+				<li>Radeon RX Vega 64 Liquid Cooling</li>
+				<li>Radeon RX Vega Nano</li>
+				<li>Radeon Vega 10 Mobile</li>
+				<li>Radeon Vega 10 Mobile</li>
+				<li>Radeon Vega 10 Mobile</li>
+				<li>Radeon Vega 11</li>
+				<li>Radeon Vega 11 Embedded</li>
+				<li>Radeon Vega 3</li>
+				<li>Radeon Vega 3 Embedded</li>
+				<li>Radeon Vega 3 Embedded</li>
+				<li>Radeon Vega 3 Embedded</li>
+				<li>Radeon Vega 3 Embedded</li>
+				<li>Radeon Vega 3 Embedded</li>
+				<li>Radeon Vega 3 Mobile</li>
+				<li>Radeon Vega 3 Mobile</li>
+				<li>Radeon Vega 3 Mobile</li>
+				<li>Radeon Vega 6 Embedded</li>
+				<li>Radeon Vega 6 Mobile</li>
+				<li>Radeon Vega 6 Mobile</li>
+				<li>Radeon Vega 6 Mobile</li>
+				<li>Radeon Vega 8</li>
+				<li>Radeon Vega 8</li>
+				<li>Radeon Vega 8 Embedded</li>
+				<li>Radeon Vega 8 Embedded</li>
+				<li>Radeon Vega 8 Mobile</li>
+				<li>Radeon Vega 8 Mobile</li>
+				<li>Radeon Vega 8 Mobile</li>
+				<li>Radeon Vega 8 Mobile</li>
+				<li>Radeon Vega 9 Mobile</li>
+				<li>Radeon Vega Frontier Edition</li>
+				<li>Radeon Vega Frontier Edition Watercooled</li>
+				<li>Zhongshan Subor Z+ GPU</li>
+				<li>Radeon Graphics 320SP Mobile</li>
+				<li>Radeon Graphics 384SP</li>
+				<li>Radeon Graphics 384SP Mobile</li>
+				<li>Radeon Graphics 384SP Mobile</li>
+				<li>Radeon Graphics 448SP</li>
+				<li>Radeon Graphics 448SP</li>
+				<li>Radeon Graphics 448SP Mobile</li>
+				<li>Radeon Graphics 448SP Mobile</li>
+				<li>Radeon Graphics 448SP Mobile</li>
+				<li>Radeon Graphics 448SP Mobile</li>
+				<li>Radeon Graphics 512SP</li>
+				<li>Radeon Graphics 512SP</li>
+				<li>Radeon Graphics 512SP Mobile</li>
+				<li>Radeon Graphics 512SP Mobile</li>
+				<li>Radeon Graphics 512SP Mobile</li>
+				<li>Radeon Graphics 512SP Mobile</li>
+				<li>Radeon Instinct MI50</li>
+				<li>Radeon Instinct MI60</li>
+				<li>Radeon Pro V420</li>
+				<li>Radeon Pro VII</li>
+				<li>Radeon Pro Vega II</li>
+				<li>Radeon Pro Vega II Duo</li>
+				<li>Radeon VII</li>
+			</ul>
+		</div>
+		<div id="navi" class="w3-container w3-border gpu" style="display:none">
+			<h2>NAVI</h2>
+			<br>
+			<ul>
+				<li>Radeon Pro 5300</li>
+				<li>Radeon Pro 5300M</li>
+				<li>Radeon Pro 5500 XT</li>
+				<li>Radeon Pro 5500M</li>
+				<li>Radeon Pro 5600M</li>
+				<li>Radeon Pro 5700</li>
+				<li>Radeon Pro 5700 XT</li>
+				<li>Radeon Pro V520</li>
+				<li>Radeon Pro V540</li>
+				<li>Radeon Pro W5300M</li>
+				<li>Radeon Pro W5500</li>
+				<li>Radeon Pro W5500M</li>
+				<li>Radeon Pro W5500X</li>
+				<li>Radeon Pro W5700</li>
+				<li>Radeon Pro W5700X</li>
+				<li>Radeon RX 5300 OEM</li>
+				<li>Radeon RX 5300 XT OEM</li>
+				<li>Radeon RX 5300M</li>
+				<li>Radeon RX 5500 OEM</li>
+				<li>Radeon RX 5500 XT</li>
+				<li>Radeon RX 5500M</li>
+				<li>Radeon RX 5600 OEM</li>
+				<li>Radeon RX 5600 XT</li>
+				<li>Radeon RX 5600M</li>
+				<li>Radeon RX 5700</li>
+				<li>Radeon RX 5700 XT</li>
+				<li>Radeon RX 5700 XT 50th Anniversary</li>
+				<li>Radeon RX 5700M</li>
+				<li>Radeon 610M</li>
+				<li>Radeon 610M</li>
+				<li>Radeon 660M</li>
+				<li>Radeon 660M</li>
+				<li>Radeon 680M</li>
+				<li>Radeon 680M</li>
+				<li>Radeon Graphics 128SP</li>
+				<li>Radeon PRO V620</li>
+				<li>Radeon PRO W6300</li>
+				<li>Radeon PRO W6400</li>
+				<li>Radeon PRO W6600</li>
+				<li>Radeon PRO W6800</li>
+				<li>Radeon Pro W6300M</li>
+				<li>Radeon Pro W6500M</li>
+				<li>Radeon Pro W6600M</li>
+				<li>Radeon Pro W6600X</li>
+				<li>Radeon Pro W6800X</li>
+				<li>Radeon Pro W6800X Duo</li>
+				<li>Radeon Pro W6900X</li>
+				<li>Radeon RX 6300</li>
+				<li>Radeon RX 6300M</li>
+				<li>Radeon RX 6400</li>
+				<li>Radeon RX 6450M</li>
+				<li>Radeon RX 6500 XT</li>
+				<li>Radeon RX 6500M</li>
+				<li>Radeon RX 6550M</li>
+				<li>Radeon RX 6550S</li>
+				<li>Radeon RX 6600</li>
+				<li>Radeon RX 6600 XT</li>
+				<li>Radeon RX 6600M</li>
+				<li>Radeon RX 6600S</li>
+				<li>Radeon RX 6650 XT</li>
+				<li>Radeon RX 6650M</li>
+				<li>Radeon RX 6650M XT</li>
+				<li>Radeon RX 6700</li>
+				<li>Radeon RX 6700 XT</li>
+				<li>Radeon RX 6700M</li>
+				<li>Radeon RX 6700S</li>
+				<li>Radeon RX 6750 XT</li>
+				<li>Radeon RX 6800</li>
+				<li>Radeon RX 6800 XT</li>
+				<li>Radeon RX 6800M</li>
+				<li>Radeon RX 6800S</li>
+				<li>Radeon RX 6850M XT</li>
+				<li>Radeon RX 6900 XT</li>
+				<li>Radeon RX 6900 XTX</li>
+				<li>Radeon RX 6950 XT</li>
+				<li>Steam Deck GPU</li>
+				<li>Radeon 760M</li>
+				<li>Radeon 780M</li>
+				<li>Radeon PRO W7800</li>
+				<li>Radeon PRO W7900</li>
+				<li>Radeon RX 7500 XT</li>
+				<li>Radeon RX 7600M</li>
+				<li>Radeon RX 7600M XT</li>
+				<li>Radeon RX 7600S</li>
+				<li>Radeon RX 7700 XT</li>
+				<li>Radeon RX 7700S</li>
+				<li>Radeon RX 7800 XT</li>
+				<li>Radeon RX 7900 XT</li>
+				<li>Radeon RX 7900 XTX</li>
+				<li>Radeon RX 7950 XT</li>
+				<li>Radeon RX 7950 XTX</li>
+				<li>Radeon RX 7990 XTX</li>
+			</ul>
+		</div>
+	<div class="w3-center">
+	<p style="margin-top:64px;"><i>Notes: </i></p>
+	<p><i>- Terascale 1 (DX10) uses different drivers compared to Terascale 2-3 (DX11).</i></p>
+	<p><i>- GCN 1-2-3 is the family of Legacy GCN.</i></p>
+	<p><i>- GCN 4-5 is the Polaris, Vega and Ryzen APU with Vega.</i></p>
+	<p><i>- RDNA 1 and Later versions are all under Polaris - Vega - Navi.</i></p>
+	</div>
+</div>
+
+<!-- Guide Section -->
+<div class="w3-container w3-center w3-black" style="padding:128px 16px" id="guide">
+  <h3 class="w3-center"><b>HOW TO INSTALL?</b></h3>
+  <p class="w3-center w3-large">First time using R.ID drivers? Clean up the GPU drivers by using <a href="https://www.guru3d.com/files-details/display-driver-uninstaller-download.html" target="_blank">DDU</a>.</p>
+  <p class="w3-center w3-large">1. Boot into safe mode, or use normal mode if you have problems with Safe Mode.</p>
+  <p class="w3-center w3-large">2. Open DDU and choose AMD in the drop down menu (open the options menu and make sure everything in the AMD section is ticked (including AMDKMPFD)).</p>
+  <img class="w3-image" src="img/ddu.png">
+  <br>
+  <br>
+  <p class="w3-center w3-large">After that, you can follow one of the guides below. The Video Guides will be updated regularly.</p>
+  <p class="w3-center w3-large"><i>Please do note only use DDU or AMD Cleanup if this is your first time installing R.ID drivers, or you have problems when doing dirty install a.k.a. update the drivers directly.</i></p>
+</div>
+
+
+
+<!-- Reviews Section -->
+<div class="w3-container w3-dark-grey" style="padding:128px 16px" id="reviews">
+  <h3 class="w3-center"><b>REVIEWS ABOUT R.ID DRIVERS</b></h3>
+  <p class="w3-center w3-large">Here are the influencers who has reviewed our projects.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3><center><i class="glyphicon glyphicon-facetime-video"></i> Linus Tech Tips</center></h3>
+		<iframe style="width:100%; height:315px;" src="https://www.youtube.com/embed/0YDy6ygIjfY?start=466" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3><center><i class="glyphicon glyphicon-facetime-video"></i> Tech Yes City</center></h3>
+		<iframe style="width:100%; height:315px;" src="https://www.youtube.com/embed/E3m6D89kN7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3><center><i class="glyphicon glyphicon-facetime-video"></i> Budget-Builds Official</center></h3>
+	  <iframe style="width:100%; height:315px;" src="https://www.youtube.com/embed/5gwVTY8JVtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3><center><i class="glyphicon glyphicon-facetime-video"></i> RandomGaminginHD</center></h3>
+          <iframe style="width:100%; height:315px;" src="https://www.youtube.com/embed/5kSrk-ZD3dM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="glyphicon glyphicon-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://forums.guru3d.com/threads/3rd-party-driver-amernime-zone-radeon-release-nemesis-22-8-2-whql-driverpack.436611/" target="_blank"><i class="glyphicon glyphicon-globe w3-hover-opacity"></i></a>
+  </div>
+  <p>Copyright 2014-2023 R.ID</p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+function nimez(evt, gpuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("gpu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+  }
+  document.getElementById(gpuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-red";
+}
+</script>
+
+</body>
+</html>
