@@ -850,19 +850,19 @@
 <!-- Compatibility Section -->
 <section class="compatibility" id="compat">
   <h2 class="section-title" data-i18n="compat_title">Device Compatibility List</h2>
-  <p class="section-subtitle">Here is the list of devices that are compatible with R.ID Drivers. To speed up searching your GPU type, click one of these GPU Architecture, then use "Find on Page" feature from your browser and type your GPU name.</p>
+  <p class="section-subtitle" data-i18n="compat_subtitle">Here is the list of devices that are compatible with R.ID Drivers. To speed up searching your GPU type, click one of these GPU Architecture, then use "Find on Page" feature from your browser and type your GPU name.</p>
   
   <div class="compat-tabs">
-    <button class="compat-tab" onclick="showGpu('gcn1')">GCN 1</button>
-    <button class="compat-tab" onclick="showGpu('gcn2')">GCN 2</button>
-    <button class="compat-tab" onclick="showGpu('gcn3')">GCN 3</button>
-    <button class="compat-tab" onclick="showGpu('polaris')">Polaris</button>
-    <button class="compat-tab" onclick="showGpu('vega')">Vega</button>
-    <button class="compat-tab" onclick="showGpu('navi')">Navi</button>
+    <button class="compat-tab" onclick="showGpu('gcn1')" data-i18n="gpu_gcn1">GCN 1</button>
+    <button class="compat-tab" onclick="showGpu('gcn2')" data-i18n="gpu_gcn2">GCN 2</button>
+    <button class="compat-tab" onclick="showGpu('gcn3')" data-i18n="gpu_gcn3">GCN 3</button>
+    <button class="compat-tab" onclick="showGpu('polaris')" data-i18n="gpu_polaris">Polaris</button>
+    <button class="compat-tab" onclick="showGpu('vega')" data-i18n="gpu_vega">Vega</button>
+    <button class="compat-tab" onclick="showGpu('navi')" data-i18n="gpu_navi">Navi</button>
   </div>
   
   <div id="gcn1" class="compat-content gpu" style="display:none">
-    <h2>GCN 1</h2>
+    <h2 data-i18n="gpu_gcn1">GCN 1</h2>
     <ul>
       <li>FirePro D300</li>
       <li>FirePro D500</li>
@@ -1009,7 +1009,7 @@
   </div>
   
   <div id="gcn2" class="compat-content gpu" style="display:none">
-    <h2>GCN 2</h2>
+    <h2 data-i18n="gpu_gcn2">GCN 2</h2>
     <ul>
       <li>FirePro M5100</li>
       <li>FirePro M6100</li>
@@ -1093,7 +1093,7 @@
   </div>
   
   <div id="gcn3" class="compat-content gpu" style="display:none">
-    <h2>GCN 3</h2>
+    <h2 data-i18n="gpu_gcn3">GCN 3</h2>
     <ul>
       <li>FirePro S7100X</li>
       <li>FirePro S7150</li>
@@ -1164,7 +1164,7 @@
   </div>
   
   <div id="polaris" class="compat-content gpu" style="display:none">
-    <h2>Polaris</h2>
+    <h2 data-i18n="gpu_polaris">Polaris</h2>
     <ul>
       <li>Radeon Pro 450</li>
       <li>Radeon Pro 455</li>
@@ -1205,7 +1205,7 @@
   </div>
   
   <div id="vega" class="compat-content gpu" style="display:none">
-    <h2>Vega</h2>
+    <h2 data-i18n="gpu_vega">Vega</h2>
     <ul>
       <li>Radeon Instinct MI25</li>
       <li>Radeon Pro Vega Frontier Edition</li>
@@ -1224,7 +1224,7 @@
   </div>
   
   <div id="navi" class="compat-content gpu" style="display:none">
-    <h2>Navi</h2>
+    <h2 data-i18n="gpu_navi">Navi</h2>
     <ul>
       <li>Radeon RX 5300</li>
       <li>Radeon RX 5300M</li>
