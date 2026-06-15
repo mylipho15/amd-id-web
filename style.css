@@ -48,6 +48,7 @@ body {
 .navbar-links {
   display: flex;
   gap: 32px;
+  align-items: center;
 }
 
 .navbar-links a {
@@ -641,17 +642,10 @@ section {
 }
 
 /* Language Selector */
-.language-selector {
-  position: fixed;
-  top: 12px;
-  right: 24px;
+.language-selector-inline {
   display: flex;
   gap: 4px;
-  z-index: 1001;
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid var(--amd-red);
+  margin-right: 20px;
 }
 
 .lang-btn {
@@ -675,10 +669,13 @@ section {
 }
 
 @media (max-width: 768px) {
-  .language-selector {
-    top: auto;
-    bottom: 80px;
-    right: 50%;
-    transform: translateX(50%);
+  .language-selector-inline {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
