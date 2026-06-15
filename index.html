@@ -595,8 +595,11 @@
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
-          // Handle HTML content
-          if (key.includes('desc') || key.includes('note') || key.includes('attention') || key.includes('whql_desc')) {
+          // Handle HTML content for specific keys that contain HTML tags
+          const htmlKeys = ['desc', 'note', 'attention', 'whql_desc', 'terms', 'subtitle'];
+          const hasHtml = htmlKeys.some(k => key.includes(k));
+          
+          if (hasHtml) {
             el.innerHTML = translations[lang][key];
           } else {
             el.textContent = translations[lang][key];
@@ -609,7 +612,10 @@
       
       // Update button states
       document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-      document.querySelector(`.lang-btn[data-lang="${lang}"]`)?.classList.add('active');
+      const activeBtn = document.querySelector(`.lang-btn[data-lang="${lang}"]`);
+      if (activeBtn) {
+        activeBtn.classList.add('active');
+      }
     }
 
     function detectLanguage() {
