@@ -17,8 +17,6 @@ venv/
 __pycache__/
 dist/
 build/
-.mypy_cache/
-.pytest_cache/
 target/
 .gradle/
 
@@ -29,7 +27,7 @@ target/
 *.swo
 *.tmp
 
-# System files
+# System/Environment files
 .DS_Store
 Thumbs.db
 .env
@@ -42,7 +40,7 @@ coverage/
 htmlcov/
 .coverage
 
-# Compressed files
+# Common compressed files
 *.zip
 *.gz
 *.tar

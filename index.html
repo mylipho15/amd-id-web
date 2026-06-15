@@ -230,11 +230,11 @@
     <img src="img/r-id_sm.png" alt="R.ID Logo" class="navbar-logo">
   </a>
   <div class="navbar-links">
-    <a href="#features">Key Features</a>
-    <a href="#download">Download</a>
-    <a href="#compat">Compatibility</a>
-    <a href="#guide">Guide</a>
-    <a href="#reviews">Reviews</a>
+    <a href="#features" data-i18n="nav_features">Key Features</a>
+    <a href="#download" data-i18n="nav_download">Download</a>
+    <a href="#compat" data-i18n="nav_compat">Compatibility</a>
+    <a href="#guide" data-i18n="nav_guide">Guide</a>
+    <a href="#reviews" data-i18n="nav_reviews">Reviews</a>
   </div>
   <button class="navbar-menu-toggle" onclick="toggleSidebar()">☰</button>
 </nav>
@@ -243,19 +243,19 @@
 <div class="sidebar" id="mobileSidebar">
   <button class="sidebar-close" onclick="toggleSidebar()">×</button>
   <div class="sidebar-links">
-    <a href="#features" onclick="toggleSidebar()">Key Features</a>
-    <a href="#download" onclick="toggleSidebar()">Download</a>
-    <a href="#compat" onclick="toggleSidebar()">Compatibility</a>
-    <a href="#guide" onclick="toggleSidebar()">Guide</a>
-    <a href="#reviews" onclick="toggleSidebar()">Reviews</a>
+    <a href="#features" onclick="toggleSidebar()" data-i18n="nav_features">Key Features</a>
+    <a href="#download" onclick="toggleSidebar()" data-i18n="nav_download">Download</a>
+    <a href="#compat" onclick="toggleSidebar()" data-i18n="nav_compat">Compatibility</a>
+    <a href="#guide" onclick="toggleSidebar()" data-i18n="nav_guide">Guide</a>
+    <a href="#reviews" onclick="toggleSidebar()" data-i18n="nav_reviews">Reviews</a>
   </div>
 </div>
 
 <!-- Hero Section -->
 <header class="hero" id="home">
   <div class="hero-content">
-    <h1>Introducing a New Multi-Driver Optimization</h1>
-    <h2>Featuring Close-to-Official Implementation</h2>
+    <h1 data-i18n="hero_title">Introducing a New Multi-Driver Optimization</h1>
+    <h2 data-i18n="hero_subtitle">Featuring Close-to-Official Implementation with Enhanced Stability</h2>
     <p class="last-update"><em>Last update: Polaris-Vega-Navi 25.3.1 Rev 2.5 Released</em></p>
     <div class="hero-buttons">
       <a href="https://discord.gg/rdnid" target="_blank" class="btn btn-primary">
@@ -275,31 +275,31 @@
 
 <!-- Key Features Section -->
 <section class="features" id="features">
-  <h2 class="section-title">Key Features</h2>
-  <p class="section-subtitle">Discover what makes R.ID Drivers stand out from the competition</p>
+  <h2 class="section-title" data-i18n="features_title">Key Features</h2>
+  <p class="section-subtitle" data-i18n="features_subtitle">Discover what makes R.ID Drivers stand out from the competition</p>
   
   <div class="features-grid">
     <div class="feature-card">
       <div class="feature-icon">🔧</div>
-      <h3>Compatibility</h3>
+      <h3 data-i18n="feature_compatibility_title">Enhanced Compatibility</h3>
       <p>Add more compatibility for newer apps and stability for your AMD GPUs, especially the old AMD GPUs that has dropped support from AMD Official Drivers. Most of the common bugs that were found in official drivers has been fixed in the R.ID Drivers.</p>
     </div>
     
     <div class="feature-card">
       <div class="feature-icon">❤️</div>
-      <h3>Community</h3>
+      <h3 data-i18n="feature_community_title">Active Community</h3>
       <p>With community support, our drivers are constantly being tested and improved with tons of feedback. Users can directly contribute in the development of the drivers.</p>
     </div>
     
     <div class="feature-card">
       <div class="feature-icon">✅</div>
-      <h3>Security</h3>
+      <h3 data-i18n="feature_security_title">Security & DRM Support</h3>
       <p>There is no need to worry about security issues. WHQL support is included with the drivers which allows you to use most apps that use DRM protection. Now with WHQL Emulation, make it easier to update windows safely, and even if whql state is NO, you can play online games anytime you want!</p>
     </div>
     
     <div class="feature-card">
       <div class="feature-icon">⚙️</div>
-      <h3>Flexibility</h3>
+      <h3 data-i18n="feature_flexibility_title">Advanced Flexibility</h3>
       <p>This driver includes Various Tweaks that can't just be implemented with registry tweaks. Long-Term Service packages are also included to provide more compatibility while keeping new features inside, we also provide various tweaks to experiment with to improve your system's performance.</p>
     </div>
   </div>
@@ -309,7 +309,7 @@
 <section class="whql">
   <div class="whql-container">
     <div class="whql-content">
-      <h3>Benchmark Validation and DRM Apps Approved</h3>
+      <h3 data-i18n="whql_title">Benchmark Validation & DRM Applications Approved</h3>
       <p>Bench it anytime with R.ID Drivers, without ruining the validation.<br>Also, You have freedom to play most games with tough anti-cheats like Vanguard does.</p>
       <a href="#download" class="btn btn-primary">
         Download Now!
@@ -323,7 +323,7 @@
 
 <!-- Download Section -->
 <section class="download" id="download">
-  <h2 class="section-title">Download Links</h2>
+  <h2 class="section-title" data-i18n="download_title">Download Links</h2>
   <p class="section-subtitle">Download the latest version (includes CCC2 aka Radeon UI below driver links)</p>
   
   <div class="download-note">
@@ -460,7 +460,7 @@
 
 <!-- Compatibility Section -->
 <section class="compatibility" id="compat">
-  <h2 class="section-title">Device Compatibility List</h2>
+  <h2 class="section-title" data-i18n="compat_title">Device Compatibility List</h2>
   <p class="section-subtitle">Here is the list of devices that are compatible with R.ID Drivers. To speed up searching your GPU type, click one of these GPU Architecture, then use "Find on Page" feature from your browser and type your GPU name.</p>
   
   <div class="compat-tabs">
